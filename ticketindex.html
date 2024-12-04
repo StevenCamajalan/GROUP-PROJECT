@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ticket</title>
+    <style>
+        body{
+            background-color: silver;
+        }
+    form { max-width: 400px; margin: auto; 
+    }
+    label { display: block; margin-top: 10px; 
+    }
+    input, select { width: 100%; padding: 8px; margin-top: 5px; 
+    }
+    button { margin-top: 15px; padding: 10px; width: 100%; background-color: #0284C7; color: white; border: none; cursor: pointer; 
+    }
+    button:hover { background-color: #0369A1; 
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="links">
+            <a href="homeindex.html">Home</a>
+            <a href="placeindex.html">Place</a>
+            <a href="timeindex.html">Time</a>
+            <a href="ticketindex.html">Ticket</a>
+            </nav>
+        </div>
+        <form action="">
+            <label for="origin">Origin:</label>
+            <select id="origin" name="origin" required>
+              <option value="">Select Origin</option>
+              <option value="Cebu City">Cebu City</option>
+              <option value="Bohol">Bohol</option>
+              <option value="Talisay">Talisay</option>
+              <option value="Mandaue">Mandaue</option>
+              <option value="Lapu-Lapu City">Lapu-Lapu City</option>
+              <option value="Negros Oriental">Negros Oriental</option>
+              <option value="Oslob">Oslob</option>
+            </select>
+            <label for="destination">Destination:</label>
+            <select id="destination" name="destination" required>
+              <option value="">Select Destination</option>
+              <option value="Cebu City">Cebu City</option>
+              <option value="Bohol">Bohol</option>
+              <option value="Talisay">Talisay</option>
+              <option value="Mandaue">Mandaue</option>
+              <option value="Lapu-Lapu City">Lapu-Lapu City</option>
+              <option value="Negros Oriental">Negros Oriental</option>
+              <option value="Oslob">Oslob</option>
+            </select>
+            <label for="time">Time:</label>
+            <select name="time" id="time" required>
+              <option value="">Select Time</option>
+              <option value="5:00-6:00 AM">5:00-6:00 AM</option>
+              <option value="7:30-8:30 AM">7:30-8:30 AM</option>
+              <option value="9:00-9:30 AM">9:00-9:30 AM</option>
+              <option value="10:00-11:00 AM">10:00-11:00 AM</option>
+              <option value="12:00-12:30 PM">12:00-12:30 PM</option>
+              <option value="1:00-1:30 PM">1:00-1:30 PM</option>
+              <option value="2:00-2:30 PM">2:00-2:30 PM</option>
+              <option value="3:00-4:00 PM">3:00-4:00 PM</option>
+              <option value="5:30-6:00 PM">5:30-6:00 PM</option>
+              <option value="6:30-7:00 PM">6:30-7:00 PM</option>
+            </select>
+            <label for="date">Travel Date:</label>
+    <input type="date" id="date" name="date" required>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
